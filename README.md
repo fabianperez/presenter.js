@@ -32,7 +32,6 @@ The most basic usage is calling presenter like so:
 $(function() {
   $('body').presenter()
 })
-
 ```
 
 You can customize several options. These are the defaults:
