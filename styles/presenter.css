@@ -1,0 +1,57 @@
+html, body {
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.slide-content-wrapper {
+  height: 100%;
+}
+
+.slide-content {
+  left: 50%;
+  margin: -160px 0 0 -480px;
+  position: absolute;
+  top: 50%;
+  width: 960px;
+}
+
+.presenter-hint {
+  bottom: 50px;
+  height: auto;
+  left: 50%;
+  margin-left: -64px;
+  position: fixed;
+  z-index: 100;
+}
+
+/* Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .slide-content {
+    margin-left: -320px;
+    width: 640px;
+  }
+}
+
+/* Mobile (Portrait) */
+@media only screen and (max-width: 767px) {
+  .slide-content {
+    margin-left: -160px;
+    width: 320px;
+  }
+}
+
+/* Mobile (Landscape) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .slide-content {
+    margin-left: -240px;
+    width: 480px;
+  }
+}

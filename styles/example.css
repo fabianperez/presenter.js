@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  color: #FFF;
+  text-shadow: 0 2px 0 #222, 0 2px 5px #444
+}
+
+.slide {
+  background-size: cover;
+}
+
+.slide-1 {
+  background-image: url(http://farm7.staticflickr.com/6171/6167391543_395a7cabfd_b.jpg);
+}
+
+.slide-2 {
+  background-image: url(http://farm7.staticflickr.com/6078/6153938935_778fd6c5bc_b.jpg);
+}
+
+.slide-3 {
+  background-image: url(http://farm7.staticflickr.com/6162/6180157078_d61855ba73_b.jpg);
+}
+
+.slide-4 {
+  background-image: url(http://farm8.staticflickr.com/7191/6904758951_6868a06560_b.jpg);
+}
+
+.slide-5 {
+  background-image: url(http://farm7.staticflickr.com/6081/6125779338_ae4467236f_b.jpg);
+}
