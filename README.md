@@ -42,7 +42,7 @@ $(function() {
     selector: '.slide',                      // The container element for your slides
     contentSelector: '.slide-content',       // The element wrapping your content
     showHint: true,                          // Whether or not to show the keyboard image hint
-    hintSource: 'images/keyboard-image.png', // The location of the hint image
+    hintSource: 'images/keyboard-image.png'  // The location of the hint image
   })
 })
 ```
