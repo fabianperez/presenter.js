@@ -1,5 +1,5 @@
 # Presenter.js
-Simple jQuery plugin for presenting a basic vertical slideshow. The slideshow can be controlled with up / down arrow keys or page up / down keys. [Check out the demo](http://fabianperez.github.com/presenter).
+Simple jQuery plugin for presenting a basic vertical slideshow. The slideshow can be controlled with up / down arrow keys or page up / down keys. [Check out the demo](http://fabianperez.github.com/presenter.js/).
 
 ## Installation
 You'll want to grab these files:
