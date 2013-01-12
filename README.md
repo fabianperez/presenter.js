@@ -29,17 +29,22 @@ Provides styling for the slides, really basic responsive styles and styles for t
 The most basic usage is calling presenter like so:
 
 ```javascript
-$('body').presenter()
+$(function() {
+  $('body').presenter()
+})
+
 ```
 
 You can customize several options. These are the defaults:
 
 ```javascript
-$('body').presenter({
-  selector: '.slide',                      // The container element for your slides
-  contentSelector: '.slide-content',       // The element wrapping your content
-  showHint: true,                          // Whether or not to show the keyboard image hint
-  hintSource: 'images/keyboard-image.png', // The location of the hint image
+$(function() {
+  $('body').presenter({
+    selector: '.slide',                      // The container element for your slides
+    contentSelector: '.slide-content',       // The element wrapping your content
+    showHint: true,                          // Whether or not to show the keyboard image hint
+    hintSource: 'images/keyboard-image.png', // The location of the hint image
+  })
 })
 ```
 
