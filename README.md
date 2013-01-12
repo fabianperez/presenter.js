@@ -47,6 +47,22 @@ $(function() {
 })
 ```
 
+## Advanced Usage
+Presenter.js will trigger an event ```presenter.active``` on whatever slide came into view. Additionally, presenter.js will add a class
+to each slide which starts with “slide-” and followed by the slide's position like so: ```slide-1```, ```slide-2``` and so on.
+
+So together you can do something like this:
+
+```javascript
+$(function() {
+  $('body').presenter()
+
+  $('.slide-1').on('presenter.active', function() {
+    console.log('Hello!')
+  })
+})
+```
+
 ## License
 Distributed under [MIT License](http://fabianperez.mit-license.org/)
 
