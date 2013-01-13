@@ -42,6 +42,23 @@
   <script>
     $(function() {
       $('body').presenter()
+
+      $('.slide-4').on('presenter.active', function() {
+        var letters = 'Hellooooooooooo'.split(''),
+            $el
+
+        $('<p/>').appendTo('.slide-content')
+
+        $el = $(this).find('p')
+
+        $.each( letters, function( i, letter ) {
+          setTimeout(function() {
+            $el.append( letter )
+          }, i * 100)
+        })
+
+        $('.slide-4').off('presenter.active')
+      })
     })
   </script>
 </html>
