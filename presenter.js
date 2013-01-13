@@ -91,6 +91,9 @@
               }, 250);
               $el.addClass('active');
             }
+            if (currentSlide === $slides.length - 2) {
+              $el.hide();
+            }
             if (currentSlide === 1 && __indexOf.call(ups, key) >= 0) {
               $el.animate({
                 left: '50%',

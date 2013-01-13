@@ -91,6 +91,8 @@ $.fn.extend
 
             $el.addClass 'active'
 
+          $el.hide() if currentSlide is $slides.length - 2
+
           if currentSlide is 1 && key in ups
             $el.animate {
               left:         '50%'
