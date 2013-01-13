@@ -1,11 +1,20 @@
 body {
   font-family: sans-serif;
   color: #FFF;
-  text-shadow: 0 2px 0 #222, 0 2px 5px #444
+}
+
+.title {
+  color: rgba(255,255,255,0.4);
+  font-weight: lighter;
+  left: 7%;
+  position: fixed;
+  top: 7%;
+  z-index: 100;
 }
 
 .slide {
   background-size: cover;
+  text-shadow: 0 2px 0 #222, 0 2px 5px #444
 }
 
 .slide-1 {

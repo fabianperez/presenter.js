@@ -68,12 +68,18 @@ $.fn.extend
 
     bindListeners = ->
       $( document ).on 'keydown', ( e ) ->
-        key = e.which
-        return if key not in [40, 38, 34, 33]
+        key   =             e.which
+        keys  =             [40, 38, 34, 33]
+        ups   =             [38, 33]
+        downs =             [40, 34]
+
+        return if key not in keys
 
         e.preventDefault()
 
         if settings.showHint
+          return if currentSlide is 0 && key in ups
+
           $el = $('.presenter-hint')
 
           unless $el.hasClass('active')
@@ -85,9 +91,7 @@ $.fn.extend
 
             $el.addClass 'active'
 
-          $el.hide() if currentSlide is $slides.length - 2
-
-          if currentSlide is 1 && key in [38, 33]
+          if currentSlide is 1 && key in ups
             $el.animate {
               left:         '50%'
               opacity:      '1'
